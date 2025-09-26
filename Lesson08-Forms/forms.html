@@ -10,7 +10,7 @@
 <body>
     <h1>Contact Form</h1>
 
-    <form action="">
+    <form action="results.html" method="Get">
         <table>
             <!--Basic Text-->
             <tr>
@@ -62,29 +62,42 @@
                 <td>Grade:</td>
                 <td>
                     <label><input type="radio" name="grade" value="9th">9th Grade</label>
-                </td>
-            </tr>
-
-
-            <tr>
-                <td>Grade:</td>
-                <td>
                     <label><input type="radio" name="grade" value="10th">10th Grade</label>
                 </td>
             </tr>
 
+            <!-- Checkbox -->
+            <tr>
+                <td>Grade:</td>
+                <td>
+                    <label><input type="checkbox" name="grade" value="9th">9th Grade</label>
+                    <label><input type="checkbox" name="grade" value="10th">10th Grade</label>
+                </td>
+            </tr>
 
             <!-- select (drop down) -->
 
-
-
+            <tr>
+                <td>Favorite Sports</td>
+                <td>
+                    <label for="sports"></label>
+                    <select name="sports" id="sports">
+                        <option value="" selected disabled>Select a sport</option>
+                        <option value="soccer">soccer</option>
+                        <option value="baseball">baseball</option>
+                        <option value="basketball">basketball</option>
+                    </select>
+                </td>
+            </tr>
 
 
 
         </table>
+        <!-- Input type "sumbit" value=sumbit -->
+
+        <button type="subit">submit</button>
+
     </form>
-
-
 
 
 
